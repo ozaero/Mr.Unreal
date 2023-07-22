@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<title>About</title>
+<head>
+    <link href="~/src/still/About.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div id="about" class="aboutPage">
+            <div class="imagePlace">
+                <img src="~/src/Image/artist.jpg" />
+            </div>
+            <div class="textPlace">
+                <h1>MR.UNREAL</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada augue vel odio varius commodo ut lobortis sem. Nullam sed feugiat velit, et venenatis mi. Curabitur lobortis eleifend turpis, elementum lobortis est elementum et. Nullam vestibulum fringilla nibh, et tincidunt erat mattis quis. Donec pharetra sagittis mi at pellentesque. Donec tempus posuere dictum. Maecenas ac mi a velit lacinia fringilla et ac nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean pulvinar nec mi pulvinar sodales. Donec et venenatis nibh, at pharetra velit.Praesent interdum ipsum et commodo suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus. In metus neque, dignissim in dictum ut, imperdiet vel nisl. Donec sagittis dignissim purus et fermentum. Vestibulum est ligula, viverra non consectetur sed, tempor quis purus. Maecenas vitae ligula eget nisi fringilla bibendum id ut erat. Nullam ac consectetur magna, vitae laoreet metus. Sed eget magna at enim iaculis porttitor.Nullam blandit felis scelerisque elit pellentesque fringilla. Duis augue est, dictum vestibulum magna non, aliquam lacinia ante. Nullam porta fermentum velit. Duis auctor tortor sed tellus pulvinar interdum. Sed eros lorem, gravida non fringilla id, mattis id nulla. Phasellus efficitur pulvinar tortor, ac posuere nisi hendrerit in. Cras in dui imperdiet, facilisis ligula a, dapibus mi. Fusce vel sem luctus, placerat mauris quis, eleifend neque. Pellentesque vitae malesuada urna. Cras facilisis pretium purus, a sagittis ante volutpat vel. In non sapien ut nunc faucibus pulvinar tincidunt et nulla.Proin faucibus arcu orci, sollicitudin posuere magna consectetur in. In consequat libero vel turpis consequat laoreet. Maecenas ultricies massa est, vitae facilisis tortor efficitur sit amet. Nullam faucibus iaculis tempus. Donec vehicula ipsum a viverra finibus. Duis ut lacus lobortis, luctus augue vel, pretium metus. Proin elit felis, porta at eros elementum, luctus suscipit risus. Donec porta felis nec commodo hendrerit. Sed ullamcorper lacus dolor, eget consectetur nisi varius eget. Vivamus suscipit ligula eget interdum interdum. Phasellus a dolor vel sapien vestibulum aliquam. Nunc lacinia sit amet lectus vel interdum. Nullam commodo erat consectetur euismod viverra. Duis ligula eros, suscipit et convallis et, maximus eget libero. Nam elementum fermentum sem, et rutrum diam vulputate id. Phasellus justo nibh, sollicitudin at mollis id, volutpat in nisi. Vivamus sit amet odio tincidunt, lobortis libero quis, volutpat orci. Donec erat tortor, suscipit volutpat ex ut, commodo sodales neque. Donec placerat neque eget nunc sollicitudin ornare. Vestibulum porttitor enim sit amet dui fermentum rhoncus. Maecenas interdum vestibulum sapien et convallis.</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        const imageElement = document.getElementById("about");
+        let index = 0;
+        let opacity = 0;
+        imageElement.style.opacity = opacity;
+
+        function fade() {
+            opacity += 0.01;
+
+            if (opacity > 1) {
+                opacity = 1;
+            } else {
+                imageElement.style.opacity = opacity;
+                requestAnimationFrame(fade);
+            }
+        }
+        fade();
+    </script>
+</body>

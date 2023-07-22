@@ -1,0 +1,51 @@
+﻿@using MrUnrealData.Entity
+@model IEnumerable<Creation>
+
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+
+<title>Gallery</title>
+
+<head>
+    <link href="~/src/still/Gallery.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="frame" class="frameArea">
+        <div class="textArea">
+            <h2>Creations</h2>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="creationArea">
+                <a href="/Store/CreationPage/@item.Id">
+                    <div class="imageArea">
+                        <img src="data:image;base64,@Convert.ToBase64String(item.Image)" alt="Creation Image" />
+                    </div>
+                    <h2>@item.CreationName</h2>
+                </a>
+            </div>
+        }
+    </div>
+    <script>
+        const imageElement = document.getElementById("frame");
+        let index = 0;
+        let opacity = 0;
+        imageElement.style.opacity = opacity;
+
+        function fade() {
+            opacity += 0.01;
+
+            if (opacity > 1) {
+                opacity = 1;
+            } else {
+                imageElement.style.opacity = opacity;
+                requestAnimationFrame(fade);
+            }
+        }
+        fade();
+    </script>
+</body>

@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "AddCreation";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<title>AddCreation</title>
+
+<head>
+    <link href="~/src/still/AddCreation.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="addCreationArea">
+        <form id="addCreationForm" action="@Url.Action("AddCreation", "Admin")" method="post" enctype="multipart/form-data">
+            <div class="textArea">
+                <h2>New Creation</h2>
+            </div>
+            <div class="form-group text-center">
+                <img src="#" style="height: 300px; width: 300px; margin-bottom: 10px; border-radius: 12px; display: none" id="previewImage" />
+            </div>
+            <div class="form-group text-center">
+                <input type="text" id="creationName" name="CreationName" required placeholder="Creation Name">
+            </div>
+            <div class="form-group text-center">
+                <input type="text" id="artistName" name="ArtistName" required placeholder="Artist Name">
+            </div>
+            <div class="form-group text-center">
+                <input type="text" id="description" name="Description" required placeholder="Description">
+            </div>
+            <div class="form-group text-center">
+                <input type="file" id="imageFile" name="ImageFile" accept="image/*" onchange="loadPreviewImage(event) ">
+            </div>
+            <div class="form-group text-center">
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function loadPreviewImage(event) {
+            var image = document.getElementById('previewImage');
+
+            image.style.display = "initial"; 
+
+            image.src = URL.createObjectURL(event.target.files[0]);
+
+        }
+    </script>
+</body>
+
+
+
+

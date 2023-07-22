@@ -1,0 +1,17 @@
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\MrUnrealBusiness.dll.config
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\MrUnrealBusiness.dll
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\MrUnrealBusiness.pdb
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\EntityFramework.dll
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\MrUnrealData.dll
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\MrUnrealData.pdb
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\MrUnrealData.dll.config
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\EntityFramework.xml
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ozane\source\repos\MrUnrealBusiness\obj\Debug\MrUnrealBusiness.csproj.AssemblyReference.cache
+C:\Users\ozane\source\repos\MrUnrealBusiness\obj\Debug\MrUnrealBusiness.csproj.CoreCompileInputs.cache
+C:\Users\ozane\source\repos\MrUnrealBusiness\obj\Debug\MrUnrealBusiness.csproj.CopyComplete
+C:\Users\ozane\source\repos\MrUnrealBusiness\obj\Debug\MrUnrealBusiness.dll
+C:\Users\ozane\source\repos\MrUnrealBusiness\obj\Debug\MrUnrealBusiness.pdb
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ozane\source\repos\MrUnrealBusiness\bin\Debug\Newtonsoft.Json.xml

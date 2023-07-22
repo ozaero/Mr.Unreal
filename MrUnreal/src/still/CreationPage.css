@@ -1,0 +1,56 @@
+﻿.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.detailArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nameArea {
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 12px;
+    font-size:50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border-color: whitesmoke;
+    width: 300px;
+    height: fit-content; /* Değiştirilen kısım */
+}
+
+.picArea {
+    margin-top: 30px;
+}
+
+.picArea img {
+    width: 450px;
+    height: 450px;
+    border-radius: 12px;
+}
+
+.infoArea {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.infoArea {
+    color: whitesmoke;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+.byArea h5{
+    color: whitesmoke;
+    font-size:25px;
+}

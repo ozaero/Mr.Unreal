@@ -1,0 +1,43 @@
+﻿@model MrUnrealData.Entity.Creation
+
+@{
+    ViewBag.Title = "EditCreation";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<title>TheCreation</title>
+
+<head>
+    <link href="~/src/still/EditCreation.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="editArea">
+            <form id="editForm" action="@Url.Action("ChangeCreation", "Admin")" method="post">
+                @Html.HiddenFor(model => model.Id)
+                <div class="headerArea">
+                    <h1>
+                        <input type="text" id="creationName" name="creationName" value="@Model.CreationName" />
+                    </h1>
+                </div>
+                <div class="imageArea">
+                    @Html.HiddenFor(model => model.Image)
+                    <img src="data:image;base64,@Convert.ToBase64String(Model.Image)" alt="Creation Image" />
+                </div>
+                <p class="descriptionArea">
+                    <textarea id="description" name="description">@Model.Description</textarea>
+                </p>
+                <p class="artistArea">
+                    <input type="text" id="artistName" name="artistName" value="@Model.ArtistName" />
+                </p>
+                <div class="lastArea">
+                    <button type="submit">Update</button>
+                    <a href="/Admin/DeleteCreation/@Model.Id" style="text-decoration:none">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

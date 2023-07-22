@@ -1,0 +1,12 @@
+C:\Users\ozane\source\repos\MrUnrealData\bin\Debug\MrUnrealData.dll.config
+C:\Users\ozane\source\repos\MrUnrealData\bin\Debug\MrUnrealData.dll
+C:\Users\ozane\source\repos\MrUnrealData\bin\Debug\MrUnrealData.pdb
+C:\Users\ozane\source\repos\MrUnrealData\bin\Debug\EntityFramework.dll
+C:\Users\ozane\source\repos\MrUnrealData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ozane\source\repos\MrUnrealData\bin\Debug\EntityFramework.xml
+C:\Users\ozane\source\repos\MrUnrealData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ozane\source\repos\MrUnrealData\obj\Debug\MrUnrealData.csproj.AssemblyReference.cache
+C:\Users\ozane\source\repos\MrUnrealData\obj\Debug\MrUnrealData.csproj.CoreCompileInputs.cache
+C:\Users\ozane\source\repos\MrUnrealData\obj\Debug\MrUnrealData.csproj.CopyComplete
+C:\Users\ozane\source\repos\MrUnrealData\obj\Debug\MrUnrealData.dll
+C:\Users\ozane\source\repos\MrUnrealData\obj\Debug\MrUnrealData.pdb

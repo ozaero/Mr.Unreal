@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<head>
+    <link href="~/src/still/Home.css" rel="stylesheet" />
+</head>
+<title>Home</title>
+
+<body>
+    <div class="homeArea">
+        <div class="container">
+            <div class="mainPage">
+                <img id="imageEffect" src="~/src/Image/artist.jpg" />
+                <h1 id="textEffect"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const text = "Welcome to Mr.Unreal's page... Here something it can make your fantasies more enjoyable is waiting for you...";
+        const textElement = document.getElementById("textEffect");
+        const imageElement = document.getElementById("imageEffect");
+        let index = 0;
+        let opacity = 0;
+        imageElement.style.opacity = opacity;
+
+        function typeWriter() {
+            if (index < text.length) {
+                textElement.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 40);
+            } else {
+                setTimeout(fadeImage, 1000);
+            }
+        }
+
+        function fadeImage() {
+            opacity += 0.01;
+
+            if (opacity > 1) {
+                opacity = 1;
+            } else {
+                imageElement.style.opacity = opacity;
+                requestAnimationFrame(fadeImage);
+            }
+        }
+
+        fadeImage();
+        typeWriter();
+    </script>
+</body>
+

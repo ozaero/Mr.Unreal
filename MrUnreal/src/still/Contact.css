@@ -1,0 +1,76 @@
+﻿.iconPlace {
+    color: whitesmoke;
+    margin: 45px;
+    animation: fade-in 2s forwards;
+}
+
+    .iconPlace .telephone {
+        display: flex;
+        justify-content: center;
+        margin: 45px;
+    }
+
+        .iconPlace .telephone i {
+            font-size: 30px;
+        }
+
+        .iconPlace .telephone h1 {
+            font-size: 30px;
+            margin-left: 30px;
+        }
+
+    .iconPlace .email {
+        display: flex;
+        justify-content: center;
+        margin: 45px;
+    }
+
+        .iconPlace .email i {
+            font-size: 30px;
+        }
+
+        .iconPlace .email h1 {
+            font-size: 30px;
+            margin-left: 30px;
+        }
+
+    .iconPlace .address {
+        display: flex;
+        justify-content: center;
+        margin: 45px;
+    }
+
+        .iconPlace .address i {
+            font-size: 30px;
+        }
+
+        .iconPlace .address h1 {
+            font-size: 30px;
+            margin-left: 30px;
+        }
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fade-in 2s forwards;
+}
+
+    .map i {
+        font-size: 500px;
+        color: rgba(0, 255, 255, 0.5);
+    }
+
+    .map .mapPlace {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .map .mapPlace iframe {
+            width: 400px;
+            height: 400px;
+            border-radius: 12%;
+        }

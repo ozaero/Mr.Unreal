@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<head>
+    <link href="~/src/still/Login.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="loginArea">
+        <form id="loginForm" action="@Url.Action("Login", "Account")" method="post">
+            <div class="text-center">
+                <div class="textArea">
+                    <h2>Are you Mr.Unreal?</h2>
+                </div>
+            </div>
+            <div class="text-center">
+                <input type="text" name="Name" placeholder="Username" required />
+            </div>
+            <div class="text-center">
+                <input type="password" name="Password" placeholder="Password" required />
+            </div>
+            <div class="text-center">
+                <button type="submit">Enter</button>
+            </div>
+        </form>
+    </div>
+</body>

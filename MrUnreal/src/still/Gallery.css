@@ -1,0 +1,75 @@
+﻿.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.frameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 50px;
+    text-decoration: none !important;
+}
+
+.creationArea {
+    background-color: rgba(0, 255, 255, 0.5);
+    width: 500px;
+    height: 575px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.textArea {
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 12px;
+    color: whitesmoke;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    border-color:whitesmoke;
+}
+
+    .textArea h2 {
+        text-decoration: none !important;
+        margin: 0;
+    }
+
+.imageArea {
+    background-color: rgb(34, 26, 26);
+    width: 475px;
+    height: 475px;
+    border-radius: 12px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .imageArea img {
+        width: 450px;
+        height: 450px;
+        border-radius: 12px;
+    }
+
+.creationArea h2 {
+    margin-top: 10px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.creationArea a,
+.textArea a {
+    text-decoration: none;
+    color: inherit;
+}

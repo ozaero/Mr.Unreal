@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "AdminPage";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<title>AdminPage</title>
+
+<head>
+    <link href="~/src/still/AdminPage.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="adminArea">
+        <div class="text-center">
+            <div class="textArea">
+                <h2>Welcome Mr.Unreal!</h2>
+            </div>
+        </div>
+        <div class="text-center">
+            <form id="logoutForm" action="@Url.Action("CreationPanel", "Admin")" method="post">
+                <button type="submit">Creation Settings</button>
+            </form>
+        </div>
+        <div class="text-center">
+            <form id="logoutForm" action="@Url.Action("Logout", "Account")" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+</body>

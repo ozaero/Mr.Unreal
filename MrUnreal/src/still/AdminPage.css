@@ -1,0 +1,34 @@
+﻿.adminArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textArea {
+    background-color: rgb(0, 255, 255, 0.5);
+    width: 600px;
+    border-radius: 12px;
+    margin: 50px auto;
+    border-style: solid;
+    text-align: center;
+    padding: 20px;
+}
+
+    .textArea h2 {
+        color: whitesmoke;
+        font-size: 60px;
+        margin: 0;
+    }
+
+
+
+.adminArea button {
+    margin-top: 50px;
+    color: whitesmoke;
+    font-size: 30px;
+    border-radius: 12px;
+    background-color: rgb(0, 255, 255, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+}

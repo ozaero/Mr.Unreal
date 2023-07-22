@@ -1,0 +1,23 @@
+﻿.aboutPage {
+    display: flex;
+    margin-top: 50px;
+}
+
+.textPlace{
+
+    margin-left: 30px;
+    color:whitesmoke;
+}
+
+.imagePlace img {
+    border-radius: 10%;
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+    border-style: solid;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: rgb(0, 255, 255, 0.5);
+}

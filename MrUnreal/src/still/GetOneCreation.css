@@ -1,0 +1,40 @@
+﻿.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.editArea {
+    text-align: center;
+    margin-top: 150px;
+}
+
+    .editArea h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+.imageArea {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+    .imageArea img {
+        width: 500px;
+        height: 500px;
+        border-radius: 8px;
+    }
+
+.descriptionArea{
+    width: 500px;
+    margin: 25px;
+    text-align: center;
+}
+
+.artistArea {
+    text-align: right;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #888;
+}

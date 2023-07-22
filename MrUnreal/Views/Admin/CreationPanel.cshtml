@@ -1,0 +1,33 @@
+﻿@using MrUnrealData.Entity
+@model IEnumerable<Creation>
+@{
+    ViewBag.Title = "CreationPanel";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<title>CreationPanel</title>
+
+<head>
+    <link href="~/src/still/CreationPanel.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="frameArea">
+        <a href="/Admin/AddCreation" style="text-decoration:none">
+            <div class="textArea">
+                <h2>Add New Creation</h2>
+            </div>
+        </a>
+        @foreach (var item in Model)
+        {
+            <div class="creationArea">
+                <a href="/Admin/EditCreation/@item.Id">
+                    <div class="imageArea">
+                        <img src="data:image;base64,@Convert.ToBase64String(item.Image)" alt="Creation Image" />
+                    </div>
+                    <h2>@item.CreationName</h2>
+                </a>
+            </div>
+        }
+    </div>
+</body>
